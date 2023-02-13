@@ -1,0 +1,139 @@
+/*
+#202124 
+#4a4a4a
+#f7f7f7
+#fff
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+body {
+    font-size: 10px;
+    height: 90vh;
+    font-family: 'Roboto';
+    margin: 80px;
+
+}
+
+section {
+    background-color: #f7f7f7;
+}
+
+header section {
+    background-image: url("../img/titel-bild.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 45vh 0 25vh 0;
+}
+
+header section h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 20vh;
+    padding: 20vh 35%;
+}
+
+header section h1 span.bold {
+    font-family: 'OpenSans';
+    font-weight: 800;
+}
+
+main section.text_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20vh 25%;
+}
+
+main section.text_center h1 {
+    font-size: 2rem;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+main section.text_center p {
+    font-size: 1rem;
+    margin-bottom: 3vh;
+    text-align: center;
+}
+
+main section p:nth-of-type(2)::after {
+    content: "Hangouts Meet.";
+    color: rgb(41, 139, 154);
+}
+
+main section.pictures_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+main section img {
+    width: 40rem;
+    height: 30rem;
+}
+
+main section:nth-of-type(5) {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+main article h2 {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    text-align: center;
+    padding: 0 110px;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10vh;
+}
+
+footer div img {
+    width: 15vh;
+}
+
+footer div p {
+    text-align: center;
+    padding: 0 25%;
+}
+
+.fixed {
+    position: fixed;
+    font-size: 10px;
+    background-color: white;
+    width: 100%;
+    text-align: right;
+    bottom: 0;
+    padding-right: 10%;
+}
